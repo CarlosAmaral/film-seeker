@@ -1,0 +1,14 @@
+{
+  "name": "film-seeker-backend",
+  "version": "1.0.0",
+  "description": "NodeJS backend that supports http calls to the Omdb API",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ."
+  },
+  "author": "Carlos Amaral",
+  "license": "ISC",
+  "dependencies": {
+    "node-cache": "4.2.0"
+  }
+}

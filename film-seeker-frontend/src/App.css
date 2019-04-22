@@ -1,0 +1,134 @@
+:root{
+  --font-lato: 'Lato', sans-serif;
+  --color-orange: #ff7f66;
+  --color-black: black;
+  --error-color:#cb0323;
+  --font-size-large: 35px;
+  --font-size-medium: 20px;
+  --font-size-small: 16px;
+  --font-weight-bold: 600;
+  --font-weight-normal: 300;
+}
+
+.header-wrapper{
+  display: flex;
+  justify-content: center;
+}
+
+.logo{
+  padding: 20px;
+  width: 30%;
+  height: 30%;
+}
+
+.name {
+  font-weight: var(--font-weight-bold);
+  color: var(--color-orange);
+}
+
+.error-message{
+  text-align: center;
+  padding-top: 50px;
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-medium);
+  color: var(--error-color);
+}
+
+.loader{
+  text-align: center;
+}
+.container{
+  padding: 50px 25px 0 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+ /*
+  * ─── START: SEARCH COMPONENT ────────────────────────────────────────────────────
+  */
+
+.input-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-container input{
+  border: 2px solid var(--color-black);
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  height: 30px;
+  width: 350px;
+  font-size: var(--font-size-small);
+  font-family: var(--font-lato);
+}
+.input-container input{
+  font-size: var(--font-size-medium);
+  font-weight: var(--font-weight-bold);
+}
+
+.input-container input::placeholder{
+  font-size: var(--font-size-medium); 
+  font-style: italic;
+  font-weight: var(--font-weight-bold);
+}
+  
+/*
+ * ─── END: SEARCH COMPONENT ────────────────────────────────────────────────────
+ */
+
+/*
+ * ─── START: RESULTS COMPONENT ───────────────────────────────────────────────────
+ */
+
+.results{
+  padding-top: 60px;
+  padding-bottom: 40px;
+  text-align: center;
+  font-size: var(--font-size-large);
+  font-weight:  var(--font-weight-normal);
+  font-family: var(--font-lato);
+}
+
+.film-column-wrapper{
+  display: flex;
+  flex-direction: column;
+  flex-basis: 25%;
+  padding: 20px;
+  align-items: center;
+}
+
+img.film-img{
+  width: 70%;
+  height: auto;
+}
+
+.film-title{
+  font-size:  var(--font-size-small);
+  font-weight:  var(--font-size-large);
+  padding-top: 10px;
+  font-family: var(--font-lato);
+}
+
+.film-row{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+@media only screen  and (max-width : 768px) {
+  .film-column-wrapper{
+    flex-basis: 35%;
+  }
+}
+
+/*
+ * ─── END: RESULTS ───────────────────────────────────────────────────────────────
+ */
+
+  
+  
